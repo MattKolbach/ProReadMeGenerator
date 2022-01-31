@@ -5,45 +5,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
-    {
-        type: 'input',
-        name: 'name',
-        message: 'What is your name?',
-        validate: nameInput => {
-          if (nameInput) {
-            return true;
-          } else {
-            console.log('Please enter your name.');
-            return false;
-          }
-        }
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: 'What is your email address?',
-        validate: emailInput => {
-          if (emailInput) {
-            return true;
-          } else {
-            console.log('Please enter your email.');
-            return false;
-          }
-        }
-      },
-      {
-        type: 'input',
-        name: 'username',
-        message: 'What is your GitHub user name?',
-        validate: usernameInput => {
-          if (usernameInput) {
-            return true;
-          } else {
-            console.log('Please enter your username.');
-            return false;
-          }
-        }
-      },
       {
         type: 'input',
         name: 'projectTitle',
@@ -96,7 +57,25 @@ const questions = [
           }
         }
       },
-
+      {
+        type: 'list',
+        name: 'licenses',
+        message: 'What license is to be used?',
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "NONE"],
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+        validate: emailInput => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log('Please enter your email.');
+            return false;
+          }
+        }
+      },
 
 
 
@@ -115,7 +94,8 @@ function writeToFile(fileName, data) {}
 function init() {
     inquirer.prompt(questions)
         .then(projectData => {
-          console.log(generateMarkdown);
+          const generateMarkdownComplete = generateMarkdown(projectData);
+          console.log(generateMarkdownComplete);
         });
 }
 
@@ -138,7 +118,7 @@ WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled 
     Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 WHEN I enter my project title
-THEN this is displayed as the title of the README
+THEN this is displayed as the title of the README  **DONE
 WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 WHEN I choose a license for my application from a list of options
