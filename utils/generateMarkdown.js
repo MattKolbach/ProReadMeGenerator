@@ -30,19 +30,20 @@ ${data.projectDescription}
 - ${data.howToInstall}
 
 ## Usage
-
-## Credits
-- ${data.collaborators}
+- ${data.usage}
 
 ## License
 - ${data.licenses}
 
 ## Contributing
+- ${data.collaborators}
 
 ## Tests
+- ${data.tests}
 
 ## Questions
-
+- For more information see my GitHub [profile](https://github.com/${data.githubUsername})
+- To contact me directly email me at <mattkolbach@yahoo.com>. Be use to include GitHub and the project name in the subject line.
 
 `;
 }
