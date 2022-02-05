@@ -20,6 +20,10 @@ The project is to crate a command-line application that dynamically generates a 
 
 ![image](https://user-images.githubusercontent.com/94270439/152658875-d7bfbb9b-75a8-4ff9-8875-4e4c3f0850d7.png)
 
+## Video
+
+https://watch.screencastify.com/v/rjOCf1L0uKpP3JWrhuqT
+
 
 ## License
 - NONE
