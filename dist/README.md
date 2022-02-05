@@ -1,8 +1,10 @@
+![](https://img.shields.io:/badge/License-APACHE%202.0-blue)
+
 # Dinner Planner
 
 ## Description
 
-a;lksja;lksjvalskjv;lakjs bklsaj a;lsjk ;lksjb
+a;lskdj;alskjd as;lkjaslkdgj 
 
 ## Table of Contents
 - [Installation](#installation)
@@ -11,20 +13,21 @@ a;lksja;lksjvalskjv;lakjs bklsaj a;lsjk ;lksjb
 - [License](#license)
 
 ## Installation
-- N/A
+- a;lkfdj asklj
 
 ## Usage
-- N/A
+- n/a
 
 ## License
-- MIT
+- APACHE 2.0
 
 ## Contributing
-- Lindsey, Brett, Cole
+- People
 
 ## Tests
-- N/A
+- n/a
+
 ## Questions
-- For more information see my GitHub [profile](https://github.com/MattKolbach)
+- For more information see my GitHub [profile](https://github.com/mattkolbach)
 - To contact me directly email me at <mattkolbach@yahoo.com>. Be use to include GitHub and the project name in the subject line.
 
